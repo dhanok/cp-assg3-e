@@ -1,4 +1,12 @@
+/*
+  Roll No.:18
+  Student Name:Aaditya Waykole
+  Program Title:Average of 5 subjects and percentage calculator
 
+  Task Given By:
+    - Roll No. of Assignee:18
+    - Assignee Name:Soham gonbhare
+*/
 #include<stdio.h>
 int main()
 {
