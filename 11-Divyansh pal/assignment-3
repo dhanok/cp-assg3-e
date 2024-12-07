@@ -1,0 +1,31 @@
+/*
+  Roll No.: 11
+  Student Name: Divyansh Pal
+  Program Title: CONVERSION OF DEGREE CELSIUS TO FAHRENHEIT
+
+  Task Given By:
+    - Roll No. of Assignee: 17
+    - Assignee Name: Mansingh chauhan
+*/
+
+#include <stdio.h>
+
+float celsius_to_fahrenheit(float celsius) {
+    return (celsius * 9.0 / 5.0) + 32;
+}
+
+int main() {
+    float celsius, fahrenheit;
+
+    // Input temperature in Celsius
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+
+    // Convert to Fahrenheit
+    fahrenheit = celsius_to_fahrenheit(celsius);
+
+    // Output the result
+    printf("%.2f°C is equal to %.2f°F\n", celsius, fahrenheit);
+
+    return 0;
+}
