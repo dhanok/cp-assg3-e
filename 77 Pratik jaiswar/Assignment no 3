@@ -7,7 +7,7 @@
 	display the output starting that they are sides of right
 	angled triangle or not
 	ASSIGNMENT no :- 3
-        assigned roll no:- 63
+        assigned roll no:- 62
 	assigned by :- Farhan
 	*/
 	#include <stdio.h>
