@@ -1,0 +1,42 @@
+*/
+  Roll No.:20
+  Student Name:yash dilip wadkar
+  Program Title:write a program area of quadrilateral .
+
+  Task Given By:
+    - Roll No. of Assignee: Arnav Sawant
+    - Assigne :  1
+    */
+    #include <stdio.h>
+#include <math.h>
+
+// Function to convert degrees to radians
+double degreesToRadians(double degrees) {
+    return (degrees * M_PI) / 180.0;
+}
+
+int main() {
+    double d1, d2, angle, area;
+
+    // Input the lengths of diagonals
+    printf("Enter the length of first diagonal (d1): ");
+    scanf("%lf", &d1);
+
+    printf("Enter the length of second diagonal (d2): ");
+    scanf("%lf", &d2);
+
+    // Input the angle between the diagonals
+    printf("Enter the angle between the diagonals (in degrees): ");
+    scanf("%lf", &angle);
+
+    // Convert the angle to radians
+    double angleInRadians = degreesToRadians(angle);
+
+    // Calculate the area of the quadrilateral
+    area = 0.5 * d1 * d2 * sin(angleInRadians);
+
+    // Output the result
+    printf("The area of the quadrilateral is: %.2lf\n", area);
+
+    return 0;
+}

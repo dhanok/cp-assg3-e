@@ -1,0 +1,47 @@
+/*
+  Roll No.:2
+  Student Name:Shah Faisal
+  Program Title:WAP to Calculate The Power Of the Number
+
+  Task Given By:Aditya Waykole
+    - Roll No. of Assignee:18
+    - Assignee Name:Aditya Waykole
+*/
+
+
+#include <stdio.h>
+
+// Function to calculate the power of a number
+double power(double base, int exponent) {
+    double result = 1.0;
+    int i;
+
+    // Loop to calculate base raised to the power of exponent
+    for(i = 1; i <= exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+
+int main() {
+    double base;
+    int exponent;
+
+    // Taking input from the user
+    printf("Enter the base: ");
+    scanf("%lf", &base);
+
+    printf("Enter the exponent: ");
+    scanf("%d", &exponent);
+
+    // Calling the power function and displaying the result
+    printf("%.2lf raised to the power of %d is: %.2lf\n", base, exponent, power(base, exponent));
+
+    return 0;
+}
+/*output
+Enter the base: 65
+Enter the exponent: 4
+65.00 raised to the power of 4 is: 17850625.00
+*/

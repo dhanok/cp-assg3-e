@@ -1,0 +1,41 @@
+
+/*
+  Roll No.: 61 
+  Student Name: Khan Maaz Yasin
+  Program Title: Find the Largest Number in an Array
+
+  Task Given By:
+    - Roll No. of Assignee: 63
+    - Assignee Name: Shaikh Rehan dilda
+*/
+
+
+
+
+#include <stdio.h>
+
+// Function to find the largest number in an array
+int findLargest(int arr[], int size) {
+    int largest = arr[0];
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i];
+        }
+    }
+    return largest;
+}
+
+int main() {
+    int n;
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d integers:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("The largest number in the array is %d.\n", findLargest(arr, n));
+    return 0;
+}
